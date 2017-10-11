@@ -22,7 +22,7 @@ function Select(el, opt) {
   container.appendChild(main)
   container.appendChild(create('div', 'scroll-select-top'))
   container.appendChild(create('div', 'scroll-select-bottom'))
-  var iscroll = this.iscroll = new Iscroll(container);
+  var iscroll = this.iscroll = new Iscroll(container.children[0]);
   this.el = create('ul', 'scroll-select')
   main.appendChild(this.el)
   this.setData(data)
